@@ -23,7 +23,7 @@ This app performs simple arithmetic operations such as **Addition, Subtraction, 
 ## ▶️ How to Run
 1. Clone this repository:
     ```bash
-    git clone [https://github.com/your-username/SimpleCalculator.git](https://github.com/your-username/SimpleCalculator.git)
+    git clone https://github.com/Pravas-Doddmane/SimpleCalculator.git
     ```
 2. Open the project in Android Studio.
 3. Connect your Android device or start an emulator.
