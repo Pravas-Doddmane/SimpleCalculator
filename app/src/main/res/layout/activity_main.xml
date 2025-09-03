@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple Calculator"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Input / Result Box -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_margin="16dp"
+        android:background="@color/white"
+        android:hint="0"
+        android:textSize="30sp"
+        android:inputType="none"
+        android:textColor="@color/black"
+        android:gravity="end|center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/textTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <GridLayout
+        android:id="@+id/gridButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        app:layout_constraintTop_toBottomOf="@id/editText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/button7"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/num"/>
+        <Button
+            android:id="@+id/button8"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/num"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/num"/>
+        <Button
+            android:id="@+id/button_div"
+            android:text="/"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/symb"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/num"/>
+
+        <Button android:id="@+id/button5"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/num"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/num"/>
+
+        <Button
+            android:id="@+id/button_mult"
+            android:text="*"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/symb"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/num"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/num"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/num"/>
+
+        <Button
+            android:id="@+id/button_sub"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/symb"/>
+
+        <Button
+            android:id="@+id/button0"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/num"/>
+
+        <Button
+            android:id="@+id/button_dot"
+            android:text="."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/symb"/>
+
+        <Button
+            android:id="@+id/button_add"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/symb"/>
+
+        <Button
+            android:id="@+id/button_eql"
+            android:text="="
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            style="@style/CalcButton"
+            android:backgroundTint="@color/eql"/>
+
+
+        <Button
+            android:id="@+id/button_Cancel"
+            android:text="C"
+            style="@style/CalcButton"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="@color/clear"
+            android:layout_column="3"
+            android:layout_row="4"/>
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

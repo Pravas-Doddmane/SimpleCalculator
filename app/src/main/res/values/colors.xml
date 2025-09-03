@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="num">#FF888888</color>
+    <color name="symb">#D3D0D0</color>
+    <color name="eql">#BFFFC0</color>
+    <color name="clear">#FF7F7F</color>
+
+</resources>
